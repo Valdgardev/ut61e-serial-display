@@ -5,6 +5,7 @@ ENGLISH
 A minimal, monochrome display for the UNI-T UT61E digital multimeter. 
 
 I built this because the official UNI-T software is heavy, outdated, and generally terrible. This app gives you a clean interface to read multimeter data on your PC without the bloat.
+<img width="704" height="314" alt="imagen" src="https://github.com/user-attachments/assets/35c5822a-8e70-4547-8681-8f618f225ff6" />
 
 ### Use Cases
 - **OBS Streaming:** The high-contrast black-and-white UI is easy to capture and doesn't waste screen space.
