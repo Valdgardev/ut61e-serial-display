@@ -39,3 +39,48 @@ python -m PyInstaller --onefile --windowed --icon="icono.ico" --name "UT61E_Disp
 ```
 
 Disclaimer: This project is about 50% vibecoded. I'm getting old and too lazy to write code by hand anymore, haha. 
+
+
+
+
+
+ESPAÑOL
+
+# UT61E Serial Display
+
+Un monitor minimalista y monocromático para el multímetro UNI-T UT61E. 
+
+Hice esto porque el software oficial de UNI-T es pesado, viejo y bastante malo. Esta app te da una interfaz limpia para leer los datos del multímetro en la PC sin complicaciones.
+
+### Casos de uso
+- **Streaming en OBS:** La interfaz en blanco y negro es fácil de capturar y no desperdicia espacio en pantalla.
+- **Setup de banco de trabajo:** Permite tener la cámara del microscopio digital y las lecturas del multímetro en el mismo monitor.
+
+### Características
+- Interfaz minimalista (fondo negro, texto blanco).
+- Soporte para español e inglés.
+- Detección y selección manual de puertos COM.
+- Funciona con el cable original UT-D02 RS-232 y adaptadores USB-a-Serial estándar (CH340, Prolific, FTDI).
+- `.exe` portable (no requiere instalación).
+
+### Descarga
+-Descargalo [AQUI](https://github.com/Valdgardev/ut61e-serial-display/releases/download/V1/UT61E_Display.exe) o desde el release.
+
+### Configuración
+Antes de usar el `.exe`, asegúrate de que tu PC pueda comunicarse con el multímetro:
+
+1. **Instalar el driver:** Instala el driver USB-a-Serial de tu adaptador (CH340, PL2303, etc.). Windows suele hacerlo solo, pero revisa el Administrador de Dispositivos si no.
+2. **Encontrar tu puerto COM:** Busca en "Puertos (COM y LPT)" en el Administrador de Dispositivos y anota el número (ej. `COM3`).
+3. **Conectar:** Abre la app, selecciona tu puerto COM en el menú y haz clic en Conectar.
+
+### Compilar desde el código
+El archivo `display.py` contiene todo el código fuente. Si quieres modificarlo o crear tu propio `.exe`, puedes compilarlo usando PyInstaller:
+
+```bash
+# Instalar PyInstaller
+pip install pyinstaller
+
+# Compilar el ejecutable portable
+python -m PyInstaller --onefile --windowed --icon="icono.ico" --name "UT61E_Display" display.py
+```
+disclaimer: Este proyecto está 50% "vibecodeado". Estoy viejo y ya me da flojera escribir código a mano, haha.
