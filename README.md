@@ -20,6 +20,9 @@ I built this because the official UNI-T software is heavy, outdated, and general
 - Works with the original UT-D02 RS-232 cable and standard USB-to-Serial adapters (CH340, Prolific, FTDI).
 - Portable `.exe` (no installation needed).
 
+### Technical Details
+This app is built around the **Cyrustek ES51922** chipset. If you are working with this chip and need a reference for decoding its 14-byte RS-232 protocol (19200 baud, 7O1, DTR/RTS handshake), the `decode_packet` function in `display.py` is a solid starting point.
+
 ### Download
 -Download [HERE](https://github.com/Valdgardev/ut61e-serial-display/releases/download/V1/UT61E_Display.exe) or from the release.
 
