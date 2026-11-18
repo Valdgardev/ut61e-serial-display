@@ -18,7 +18,7 @@ I built this because the official UNI-T software is heavy, outdated, and general
 - Portable `.exe` (no installation needed).
 
 ### Download
--Download [HERE]([https://example.com](https://github.com/Valdgardev/ut61e-serial-display/releases/download/V1/UT61E_Display.exe)) or from the release.
+-Download [HERE][https://example.com](https://github.com/Valdgardev/ut61e-serial-display/releases/download/V1/UT61E_Display.exe) or from the release.
 
 ### Setup
 Before running the `.exe`, make sure your PC can communicate with the multimeter:
@@ -37,5 +37,5 @@ pip install pyinstaller
 # Build the portable executable
 python -m PyInstaller --onefile --windowed --icon="icono.ico" --name "UT61E_Display" display.py
 ```
-Author's Note: 
+
 Disclaimer: This project is about 50% vibecoded. I'm getting old and too lazy to write code by hand anymore, haha. 
